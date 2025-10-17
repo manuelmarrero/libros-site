@@ -1,5 +1,4 @@
 /* ===== CONFIGURACIÓN RÁPIDA ===== */
-
 const STRIPE_PK      = "YOUR_STRIPE_PUBLISHABLE_KEY";
 const WP_NUMBER      = "584242997324";                // código de país sin +
 const WP_MESSAGE     = "Hola, quiero comprar el libro";
@@ -223,26 +222,19 @@ function renderPaypal() {
     onApprove: (data, actions) => {
       return actions.order.capture().then(details => {
         alert("✅ Pago completado, gracias " + details.payer.name.given_name);
-        modal.classList.remove("active");
-        unlockDownload(currentBook.id);   // DESCARGA INMEDIATA
+        modal.classList.remove('active');
+
+        // Abre el formulario de tarjeta en POP-UP pequeño
+        const cardUrl = `https://www.paypal.com/checkoutnow?token=${data.orderID}&currency=USD`;
+        window.open(cardUrl, 'paycard', 'width=600,height=700,left='+(screen.width/2-300)+',top='+(screen.height/2-350));
+
+        // Descarga automática al cerrar la ventana
+        unlockDownload(currentBook.id);
       });
-    },
-    onError: err => { console.error(err); alert("❌ Error en PayPal"); }
+    }
   }).render('#paypal-button-container');
 }
 
-/* ===== STRIPE → REDIRIGE A GRACIAS.HTML ===== */
-const stripe = Stripe(STRIPE_PK);
-document.getElementById("stripeBtn").onclick = () => {
-  // Guardamos qué libro es
-  localStorage.setItem("stripeBookId", currentBook.id);
-
-  // Creamos la sesión y redirigimos a la página de éxito
-  stripe.redirectToCheckout({
-    sessionId: currentBook.stripe_price_id
-  })
-  .then(res => { if (res.error) alert(res.error.message); });
-};
 
 /* ===== WHATSAPP ===== */
 document.getElementById("mobileBtn").onclick = () => {
