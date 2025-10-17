@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gracias por tu compra</title>
+  <style>
+    body {
+      background: #121212;
+      color: #f1f1f1;
+      font-family: Inter, system-ui, sans-serif;
+      display: grid;
+      place-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 { color: #ffcc00; }
+    a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Pago recibido!</h1>
+  <p>Tu archivo se está descargando automáticamente.</p>
+  <p>Si no empieza en unos segundos, <a href="/">vuelve al inicio</a>.</p>
+
+  <script src="js/main.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const sessionId = params.get("session_id");
+    if (sessionId) {
+      const bookId = localStorage.getItem("stripeBookId");
+      unlockDownload(bookId);  // ← DESCARGA INMEDIATA
+      localStorage.removeItem("stripeBookId");
+    }
+  </script>
+</body>
+</html>
