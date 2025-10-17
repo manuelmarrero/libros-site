@@ -284,3 +284,9 @@ footer {
 
 .social-btn:hover  { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,.35); }
 
+/* Evita que TU modal bloquee el scroll */
+#payModal .modal-content {
+  max-height: 85vh;          /* altura máxima visible */
+  overflow-y: auto;          /* barra lateral si hace falta */
+  margin-top: 5vh;           /* espacio arriba/abajo */
+}
