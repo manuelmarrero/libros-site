@@ -294,7 +294,7 @@ footer {
 /* botón "Leer reseña" */
 .btn-review {
   background: #4a7a9a;
-  color: #000;
+  color: #000000;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: var(--radius);
