@@ -1,5 +1,5 @@
 /* ===== CONFIGURACIÓN RÁPIDA ===== */
-const STRIPE_PK      = "YOUR_STRIPE_PUBLISHABLE_KEY";
+
 const WP_NUMBER      = "584242997324";                // código de país sin +
 const WP_MESSAGE     = "Hola, quiero comprar el libro";
 
@@ -158,10 +158,8 @@ BOOKS.forEach(b => {
   const card = document.createElement("article");
   card.className = "card";
 
-  // ➜ NOMBRE SOBRE LA IMAGEN solo para el libro 2
-  const nameOverlay = b.id === 2
-    ? '<span class="author-name">Manuel Marrero Molina</span>'
-    : '';
+  // Nombre sobre imagen solo libro 2
+  const nameOverlay = b.id === 2 ? '<span class="author-name">Manuel Marrero Molina</span>' : '';
 
   card.innerHTML = `
     <div class="img-box ${b.id === 2 ? 'with-name' : ''}">
@@ -171,6 +169,7 @@ BOOKS.forEach(b => {
     <div class="content">
       <h3>${b.title}</h3>
       <p>${b.desc}</p>
+      <button class="btn-review" data-id="${b.id}">Leer reseña</button>
       <div class="footer-card">
         <span class="price">${b.price_str}</span>
         <button class="btn-buy" data-id="${b.id}">Comprar</button>
@@ -179,14 +178,10 @@ BOOKS.forEach(b => {
   catalog.appendChild(card);
 });
 
-/* ===== APERTURA RESEÑA (imagen o título) ===== */
+/* ===== EVENTO: solo botón "Leer reseña" ===== */
 catalog.addEventListener("click", e => {
-  const card = e.target.closest(".card");
-  if (!card) return;
-  const isImg   = e.target.tagName === "IMG";
-  const isTitle = e.target.tagName === "H3";
-  if (isImg || isTitle) {
-    const id = Number(card.querySelector(".btn-buy").dataset.id);
+  if (e.target.classList.contains("btn-review")) {
+    const id = Number(e.target.dataset.id);
     openReviewModal(id);
   }
 });
@@ -222,13 +217,13 @@ function renderPaypal() {
     onApprove: (data, actions) => {
       return actions.order.capture().then(details => {
         alert("✅ Pago completado, gracias " + details.payer.name.given_name);
-        modal.classList.remove('active');
 
         // Abre el formulario de tarjeta en POP-UP pequeño
         const cardUrl = `https://www.paypal.com/checkoutnow?token=${data.orderID}&currency=USD`;
         window.open(cardUrl, 'paycard', 'width=600,height=700,left='+(screen.width/2-300)+',top='+(screen.height/2-350));
 
-        // Descarga automática al cerrar la ventana
+        // Cierra tu modal y descarga
+        modal.classList.remove('active');
         unlockDownload(currentBook.id);
       });
     }

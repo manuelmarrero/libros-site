@@ -290,3 +290,21 @@ footer {
   overflow-y: auto;          /* barra lateral si hace falta */
   margin-top: 5vh;           /* espacio arriba/abajo */
 }
+
+/* botón "Leer reseña" */
+.btn-review {
+  background: #4a7a9a;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 0.4rem;        /* ← más pegado al texto desc */
+  margin-bottom: 0.8rem;     /* ← más separado de lo que sigue */
+  align-self: flex-start;
+}
+.btn-review:hover {
+  background: #4a7a9a;
+}
