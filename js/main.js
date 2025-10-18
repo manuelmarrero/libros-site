@@ -29,7 +29,7 @@ const BOOKS = [
 /* ===== RESEÑAS ===== */
 const REVIEWS = {
   1: `
-                                            <u>Contenido</u>
+                                        <u>Contenido</u>
 
 Dedicatoria.
 Sobre el autor.
@@ -107,19 +107,19 @@ Conclusión.
 Bibliografía.
 
 
-                                            <u>Dedicatoria</u>
+                                        <u>Dedicatoria</u>
 
     Dedicado a mi padre Luis Marrero que ha sido un brazo de apoyo en estos tiempos tan difíciles; a la memoria de mi madre Leída Molina que en vida lo dio todo por mí y mis hermanos; a la pastora Belkis Diaz que durante sus años de vida me ayudo en mi camino espiritual y sobre todo dedicado a mi padre celestial YHWH, padre de nuestro señor Jesucristo y Dios sobre todas las cosas.
 
 
-                                                <u>Sobre el autor</u>
+                                        <u>Sobre el autor</u>
 
     Por gracia y Misericordia ministro del Reino de Dios, llevo ya 4 años ejerciendo como Maestro de la palabra. Pero desde el año 2010 cuando mi señor Jesucristo me llamo para formar parte de sus guerreros y hasta el día de hoy, agosto del 2025, he estado sirviendo al señor con ese fuego interno que él puso dentro de mí.
 
     Tengo 32 años y actualmente resido en Venezuela, y asisto en la “Comunidad Cristiana Jehová Nissi” en el estado portuguesa, en un pueblo llamado Boconoito. Aquí he estado estos últimos 15 años de mi vida sirviéndole al Señor. Mantengo un estudio bíblico todas las semanas en donde enseñamos las verdades del reino de los cielos y respondemos a cada pregunta inquietante por parte de los oyentes.
 
 
-                                            <u>Introducción</u>
+                                      <u>Introducción</u>
 
     <u>29 y Moisés le respondió: ¿Tienes tú celos por mí? Ojalá todo el pueblo de Jehová fuese profeta, y que Jehová pusiera su espíritu sobre ellos. (Numero 11:29. NVI).</u>
 
@@ -134,7 +134,7 @@ Bibliografía.
     Otro de los objetivos, es que, se busca de abarcar todos los puntos posibles para que todas las preguntas y dudas sean respondidas a medida que usted vaya leyendo, porque si mis hermanos, las preguntas son demasiadas y las respuestas que muchas veces obtenemos no son las que esperamos. Pero damos gracias a Dios, por qué, él es, el que pone tanto el querer como el hacer en nosotros de su buena voluntad y usted, querido lector, tiene en sus manos tanta información cómo se necesita para responder a todas las preguntas que guardamos en nuestro corazón, pero, que no hacemos por temor a hacer juzgados por el sistema el cual muchas veces presta más atención a las emociones del momento que a las palabras del padre plasmadas en las escrituras; o por pena hacer burlados, porque, muchas veces llegamos a pensar que la pregunta que haríamos sería muy tonta y no queremos ser el hazmerreír del momento; y, podrían ser muchas las razones por las cuales nos quedamos callados ante tanta confusión, con demasiadas preguntas y pocas respuestas.
     
     
-                            <u>Importancia del ministerio Profético</u>
+                        <u>Importancia del ministerio Profético</u>
 
     29 y Moisés le respondió: ¿Tienes tú celos por mí? Ojalá todo el pueblo de Jehová fuese profeta, y que Jehová pusiera su espíritu sobre ellos. NVI.
 Numero 11:29.
@@ -159,7 +159,7 @@ Numero 11:29.
     `,
 
   2: `
-                                            <u>Contenido</u>
+                                        <u>Contenido</u>
 
 Dedicatoria.
 Sobre el autor.
@@ -209,19 +209,19 @@ Resístelo hasta que huya.
 Conclusión.
 
 
-                                          <u>Dedicatoria</u>
+                                      <u>Dedicatoria</u>
 
     Dedicado a todas aquellas personas, que en algún momento de su vida han sido víctimas del diablo para ser destruidos, pero gracias a nuestro señor Jesucristo fueron liberados y saben perfectamente que satanás es un estratega del mal. Dedicados a todos y cada una de las personas que desean conocer las verdades del reino y que sin cesar lo buscan como a un tesoro escondido.
 
 
-                                        <u>Sobre el autor</u>
+                                    <u>Sobre el autor</u>
 
     Por gracia y Misericordia ministro del Reino de Dios, llevo ya 4 años ejerciendo como Maestro de la palabra. Pero desde el año 2010 cuando mi señor Jesucristo me llamo para formar parte de sus guerreros y hasta el día de hoy, agosto del 2025, he estado sirviendo al señor con ese fuego interno que él puso dentro de mí.
 
     Tengo 32 años y actualmente resido en Venezuela, y asisto en la “Comunidad Cristiana Jehová Nissi” en el estado portuguesa, en un pueblo llamado Boconoito. Aquí he estado estos últimos 15 años de mi vida sirviéndole al Señor. Mantengo un estudio bíblico todas las semanas en donde enseñamos las verdades del reino de los cielos y respondemos a cada pregunta inquietante por parte de los oyentes.
 
 
-                                          <u>Introducción</u>
+                                      <u>Introducción</u>
 
 “Para que Satanás no tome ventaja sobre nosotros, pues no ignoramos sus planes.” (2 Corintios 2:11). NVI.
 
@@ -236,7 +236,7 @@ Conclusión.
     Cuando Dios pone el deseo de escribir un libro en el corazón de un hombre, es para que la persona pueda entender y comprender de una forma explicativa lo que dice su palabra. Por lo tanto, querido lector, este libro tiene como objetivo su aprendizaje y practica en el mundo real, para que no te conviertas en esa presa fácil de atrapar y devorar, si no, para que ágil mente escapes con la sabiduría que Dios ya te dio por medio del Espíritu Santo.
 
 
-                              <u>¿Qué son las estrategias satánicas?</u>
+                          <u>¿Qué son las estrategias satánicas?</u>
 
 ¿Qué es una estrategia?
 
