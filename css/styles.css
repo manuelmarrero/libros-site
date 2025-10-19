@@ -157,14 +157,38 @@ header p {
   border-color: var(--primary);
 }
 #contact {
-  max-width: var(--max-width);
+  width: 49%;
   margin: 4rem auto 3rem;
   padding: 0 1rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 #contact h2 {
   margin-bottom: 1.2rem;
   text-align: center;
 }
+
+/* CAJA DE CORREO */
+.box {
+  width: 46%;
+  margin: 4rem auto 3rem;
+
+  background: var(--surface);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+  font-size: 1.1rem;
+}
+.box a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+.box a:hover {
+  text-decoration: underline;
+}
+
+/*-----------------------------------------*/
 
 footer {
   text-align: center;
@@ -308,3 +332,41 @@ footer {
 .btn-review:hover {
   background: #4a7a9a;
 }
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  max-width: var(--max-width);
+  margin: auto;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  flex-wrap: wrap;
+}
+
+
+/* VENTANA "SOBRE EL AUTOR" – igual a reseña */
+#authorModal .modal-content {
+  max-width: 600px;
+  max-height: 85vh;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+.author-body {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  color: var(--text);
+}
+
+
+

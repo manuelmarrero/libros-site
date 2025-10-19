@@ -7,10 +7,12 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
+<header>
+  <div class="header-text">
     <h1>Maestro Manuel Marrero</h1>
-    <p> Y conocerán la verdad, y la verdad los hará libres. Juan 8: 32.</p>
-  </header>
+    <p>Y conocerán la verdad, y la verdad los hará libres. Juan 8: 32.</p>
+  </div>
+</header>
 
   <main class="grid" id="catalog"></main>
 
@@ -25,7 +27,12 @@
     </div>
   </div>
 
-  <!-- ANTES: formulario -->
+
+  <div class="box">
+    <a href="#" class="btn-about">SOBRE EL AUTOR</a>
+  </div>
+
+
 <!-- DESPUÉS: solo tu correo -->
 <section id="contact">
   <h2>¿Dudas? Escríbeme</h2>
@@ -71,5 +78,18 @@
   <script src="js/main.js"></script>
 
   
+  <!-- VENTANA "SOBRE EL AUTOR" (igual que reseña) -->
+<div class="modal" id="authorModal">
+  <div class="modal-content">
+    <button class="close" id="closeAuthorModal">&times;</button>
+    <h4>Sobre el autor</h4>
+    <div class="author-body">
+      Aquí coloca tu texto completo: biografía, ministerio, testimonios, etc.
+      Puedes escribir tantos párrafos como quieras.
+    </div>
+  </div>
+</div>
+
+
 </body>
 </html>

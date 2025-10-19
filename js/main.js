@@ -10,19 +10,17 @@ const BOOKS = [
     id: 1,
     title: "DIOS Y EL PROFETA una conexión entre cielo y tierra",
     desc: "Dios y el Profeta una conexión entre cielo y tierra, un pacto eterno, un amor eterno. (Y Moisés le respondió: ¿Tienes tú celos por mí? Ojalá todo el pueblo de Jehová fuese profeta, y que Jehová pusiera su espíritu sobre ellos. NVI. NUMEROS 11:29)",
-    price: 15.00,
-    price_str: "$15.00",
+    price: 10.00,
+    price_str: "$10.00",
     paypal_desc: "DIOS Y EL PROFETA - Libro",   // ← AQUÍ
-    stripe_price_id: "price_1XXXXX"
   },
   {
     id: 2,
     title: "ESTRATEGIAS SATÁNICAS conociendo a tu enemigo",
     desc: "Estrategias Satánicas: Un libro que todo cristiano debería leer y si no lo eres también. (Para que Satanás no tome ventaja sobre nosotros, pues no ignoramos sus planes. 2 a CORINTIOS 2:11)",
-    price: 15.00,
-    price_str: "$15.00",
+    price: 10.00,
+    price_str: "$10.00",
     paypal_desc: "ESTRATEGIAS SATÁNICAS - Libro", // ← AQUÍ
-    stripe_price_id: "price_2XXXXX"
   }
 ];
 
@@ -416,5 +414,38 @@ document.getElementById("mobileBtn").onclick = () => {
 document.getElementById("year").textContent = new Date().getFullYear();
 
 
+/* EVENTO: abrir ventana "Sobre el autor" */
+document.addEventListener("click", e => {
+  if (e.target.classList.contains("btn-about")) {
+    openAuthorModal();
+  }
+});
 
+function openAuthorModal() {
+  const modal = document.createElement("div");
+  modal.className = "modal active";
+  modal.id = "authorModal";
+  modal.innerHTML = `
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Sobre el autor</h4>
+        <button class="close" onclick="closeAuthorModal()">&times;</button>
+      </div>
+      <div class="author-body">
+        Aquí coloca tu texto completo: biografía, ministerio, testimonios, etc.
+        Puedes escribir tantos párrafos como quieras.
+      </div>
+    </div>`;
+
+  document.body.appendChild(modal);
+
+  // Cierra al hacer clic fuera del cuadro
+  modal.addEventListener("click", e => {
+    if (e.target === modal) closeAuthorModal();
+  });
+}
+
+function closeAuthorModal() {
+  document.getElementById("authorModal")?.remove();
+}
 
