@@ -432,8 +432,11 @@ function openAuthorModal() {
         <button class="close" onclick="closeAuthorModal()">&times;</button>
       </div>
       <div class="author-body">
-        Aquí coloca tu texto completo: biografía, ministerio, testimonios, etc.
-        Puedes escribir tantos párrafos como quieras.
+      Hola, te bendigo en el nombre de nuestro Señor Jesucristo. Mi nombre es Manuel Marrero Molina, tengo 32 años, naci el 26 de mayo de 1993 en la maternidad de petare, parroquia petare, del estado miranda en venezuela. Por gracia y misericordia de Dios soy maestro de su palabra. Actualmente me encuentro cursando una lisenciatura en "ciencias teologicas".
+
+      Llegue a los pies de Cristo hace 15 años, especificamente en septiembre del año 2010. he asistido desde entonces sin faltar a los servicios, ya que se ha vuelto mi pasion, asi como el Rey David quien anhelaba estar en la casa de Jehova todo los dias de su vida (Salmo 27:4). he tenido la bendicion de servir en diferentes areas de la iglesia, como lo son: maestro de niños, lider jovenes y ahora doy estudios biblicos todos los dias Jueves. Pero por sobre todo un servidor del Reino de Dios, siempre estoy dispuesto a servir en cualquier area que el señor me ponga y que haga falta dentro de la congregación.
+
+      la congregacion esta ubicada en Venezuela, estado Portuguesa, municicio san genaro de boconoito y su nombre es: "JEHOVA NISI".
       </div>
     </div>`;
 
